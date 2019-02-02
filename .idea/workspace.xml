@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96b62828-8874-4c43-bde8-8cd11141a6a9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.yxy" beforeDir="false" />
-    </list>
+    <list default="true" id="96b62828-8874-4c43-bde8-8cd11141a6a9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,11 +43,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1456" />
-    <option name="height" value="886" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="657" />
+    <option name="y" value="16" />
+    <option name="width" value="771" />
+    <option name="height" value="620" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -58,7 +55,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -70,6 +66,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -129,15 +126,23 @@
       <workItem from="1549044210486" duration="992000" />
       <workItem from="1549070837248" duration="963000" />
     </task>
+    <task id="LOCAL-00001" summary="Revert &quot;Delete db.sqlite3&quot;&#10;&#10;This reverts commit 4c5c34ce">
+      <created>1549073335881</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1549073335881</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2557000" />
+    <option name="totallyTimeSpent" value="2798000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
+    <frame x="657" y="16" width="771" height="620" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25716332" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.5049226" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="aws.explorer" order="3" side_tool="true" />
@@ -149,11 +154,11 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49928367" weight="0.32934928" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4978903" weight="0.50924027" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info active="true" anchor="bottom" id="manage.py@MyWebSite" order="10" visible="true" weight="0.32934928" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49856734" visible="true" weight="0.32934928" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50143266" side_tool="true" visible="true" weight="0.32934928" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49648383" visible="true" weight="0.32854208" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5035162" side_tool="true" visible="true" weight="0.32854208" />
       <window_info anchor="bottom" id="Python Console" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -164,6 +169,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Revert &quot;Delete db.sqlite3&quot;&#10;&#10;This reverts commit 4c5c34ce" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;Delete db.sqlite3&quot;&#10;&#10;This reverts commit 4c5c34ce" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/MyWebSite/urls.py">
