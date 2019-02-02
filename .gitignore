@@ -1,6 +1,22 @@
 
 # Created by https://www.gitignore.io/api/linux,django
 
+### VirtualEnv ###
+# Virtualenv
+# http://iamzed.com/2009/05/07/a-primer-on-virtualenv/
+.Python
+[Bb]in
+[Ii]nclude
+[Ll]ib
+[Ll]ib64
+[Ll]ocal
+[Ss]cripts
+pyvenv.cfg
+.venv
+pip-selfcheck.json
+
+
+# End of https://www.gitignore.io/api/virtualenv
 ### Django ###
 *.log
 *.pot
@@ -9,7 +25,7 @@ __pycache__/
 local_settings.py
 db.sqlite3
 media
+.env
 
 # If your build process includes running collectstatic, then ...
 
-.env
