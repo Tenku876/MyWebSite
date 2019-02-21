@@ -15,7 +15,7 @@ pyvenv.cfg
 .venv
 pip-selfcheck.json
 .requirements.txt
-.idle
+.idea
 
 # End of https://www.gitignore.io/api/virtualenv
 ### Django ###
