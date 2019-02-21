@@ -1,8 +1,13 @@
-<html>
-<head>
-<title>template test</title>
-</head>
-<body>
-<p>This is {{app}} test.</p>
-</body>
-</html>
+{% extends "base.html" %}
+{% block title %}My Web Site!{%  endblock %}
+{% load static %}
+
+{% block body%}
+    <div id="test">Hello World</div>
+
+    <script>
+        $(function () {
+            $("#test").text("hi jquery world!a")
+        })
+    </script>
+{% endblock %}
