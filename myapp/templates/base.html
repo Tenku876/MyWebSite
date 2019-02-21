@@ -3,16 +3,22 @@
     <head>
     {% load static %}
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{% block title %}{% endblock %}</title>
 
-    <!-- BootStrap -->
+    <!-- BootStrapの読み込み -->
     <link href="{% static 'myapp/bootstrap/css/bootstrap.min.css' %}">
+    <!-- jquery -->
     <script src="{% static 'myapp/jquery-3.3.1.min.js' %}"></script>
+    <!-- BootStrapのjs -->
+    <script src="{% static 'myapp/bootstrap/js/bootstrap.min.js' %}"></script>
     </head>
 
 
     <body>
+    {% block navbar %}{% endblock %}
     {% block body %}
     {% endblock %}
 
