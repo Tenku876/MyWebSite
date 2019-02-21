@@ -16,7 +16,7 @@ pyvenv.cfg
 pip-selfcheck.json
 .requirements.txt
 .idea
-
+/static/*
 # End of https://www.gitignore.io/api/virtualenv
 ### Django ###
 *.log
