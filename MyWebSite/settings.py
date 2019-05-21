@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 # python-decoupleを使用　参照：
 # https://wonderwall.hatenablog.com/entry/2018/04/06/001500
-SECRET_KEY = config('SECRET_KEY')
+# SECRET_KEY = config('SECRET_KEY')  やっぱやめてlocal_settingsで管理
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
