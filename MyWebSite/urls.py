@@ -19,4 +19,5 @@ import myapp
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("kintai/", include("kintai.urls"))
 ]
