@@ -17,5 +17,6 @@ from django.contrib import admin
 from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("kintai/", include("kintai.urls"))
+    path("kintai/", include("kintai.urls")),  # 勤怠管理用
+    path('accounts/', include('django.contrib.auth.urls')),  # サインイン用
 ]

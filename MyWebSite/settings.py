@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    "kintai"
 ]
 
 MIDDLEWARE = [
@@ -138,3 +139,7 @@ try:
     from MyWebSite.local_settings import *
 except ImportError:
     pass
+
+
+# ログイン後リダイレクト先
+LOGIN_REDIRECT_URL = "kintai"
