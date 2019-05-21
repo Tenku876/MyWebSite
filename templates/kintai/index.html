@@ -1,7 +1,13 @@
 {% extends "base.html" %}
 
+{% block css %}
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'kintai/kintai.css' %}">
+{% endblock %}
+
 {% block body %}
-    <div>Hello template world!</div>
+    <div id="test">Hello template world!</div>
     <input type="button" id="shukkin" class="ref_button" onclick="location.href='{% url "kintai:shukkin_view" %}'" value="出勤報告">
     <input type="button" id="taikin" class="ref_button" onclick="location.href='{% url "kintai:taikin_view" %}'" value="退勤報告">
 {% endblock %}

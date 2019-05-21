@@ -9,4 +9,4 @@ urlpatterns = [
     path('', views.index, name='index'),
     path("shukkin/", views.shukkin_view, name="shukkin_view"),
     path("taikin/", views.taikin_view, name="taikin_view")
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
