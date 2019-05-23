@@ -14,15 +14,20 @@
     <div class="title">{{ title }}</div>
 
     <form action="{% url 'kintai:confirm' %}" method="post">
+    {% csrf_token %}
+        <div id="type">
+            <input hidden name="status" value="{{ status }}">
+        </div>
+
         <div class="content">
             <div class="time-selecter">
-                <select class="time" name="">
+                <select class="time" name="hour">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                 </select>
                 <p id="hour">時</p>
-                <select class="time" name="">
+                <select class="time" name="minute">
                     <option value="4">1</option>
                     <option value="5">2</option>
                     <option value="6">3</option>

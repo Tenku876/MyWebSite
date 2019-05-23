@@ -1,0 +1,38 @@
+
+#conf_type{
+    display: flex;
+}
+
+.confirm_time{
+    display: flex;
+}
+
+
+.main_text{
+    font-size: 20px;
+}
+
+.title{
+    font-size: 30px;
+}
+
+
+.conf_content{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    /*color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+
+.button{
+    display: inline;
+    margin-top: 30px;
+    height: 60px;
+}
+
+#sendbutton{
+    margin-top:50%;
+}

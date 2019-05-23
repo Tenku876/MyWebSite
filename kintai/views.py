@@ -22,7 +22,11 @@ def taikin_view(req):
     return render(req, "kintai/kintai.html", res_dict)
 
 def confirm_view(req):
-    res_dict = {
+    data = req.POST
 
+    res_dict = {
+        "status": data["status"],
+        "hour": data["hour"],
+        "minute": data["minute"],
     }
     return render(req, "kintai/confirm.html", res_dict)

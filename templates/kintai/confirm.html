@@ -1,15 +1,45 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block css %}
+    {# PC/タブ用CSS #}
+    <link rel="stylesheet" href="{% static 'kintai/large.css' %}">
+    {# モバイル用CSS #}
+    <link rel="stylesheet" media="(max-width: 640px)" href="{% static 'kintai/small.css' %}">
+    <link rel="stylesheet" href="{% static 'kintai/confirm.css' %}"
+{% endblock %}
+
 {% block title %}
-入力確認
+          入力確認
 {% endblock %}
 
 {% block body %}
     <div class="title">入力確認</div>
 
-    <div class="text">以下の内容で送信します。よろしいですか？</div>
+    <div class="content">
+        <div class="main_text">以下の内容で送信します。よろしいですか？</div>
+        <br>
 
+        <form action="" method="post" class="conf_content">
+            <div id="conf_type">
+                <label>申請タイプ: </label>
+                <div>
+                    {% if status == "shukkin" %}
+                        <a>出勤</a>
+                    {% elif status == "taikin" %}
+                        <a>退勤</a>
+                    {% endif %}
+                </div>
+            </div>
+            <br>
+            <div class="confirm_time">
+                <div class="time">{{ hour }}時</div>
+                <div class="time">{{ minute }}分</div>
+            </div>
 
-
+            <div class="confirm_button">
+                <input type="button" id="sendbutton"  class="button" value="送信">
+                <button type="button" class="button" onclick="location.href='{% url "kintai:index" %}'">キャンセル</button>
+            </div>
+        </form>
 {% endblock %}
