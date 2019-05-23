@@ -8,7 +8,21 @@ def index(req):
     return render(req, "kintai/index.html")
 
 def shukkin_view(req):
-    return render(req, "kintai/shukkin.html")
+    res_dict = {
+        "title": "出勤報告",
+        "status": "shukkin"
+    }
+    return render(req, "kintai/kintai.html", res_dict)
 
 def taikin_view(req):
-    return render(req, "kintai/taikin.html")
+    res_dict = {
+        "title": "退勤報告",
+        "status": "taikin"
+    }
+    return render(req, "kintai/kintai.html", res_dict)
+
+def confirm_view(req):
+    res_dict = {
+
+    }
+    return render(req, "kintai/confirm.html", res_dict)

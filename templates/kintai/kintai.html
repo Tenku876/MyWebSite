@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}{{ title }}{% endblock %}
+
+{% block css %}
+    {# PC/タブ用CSS #}
+    <link rel="stylesheet" href="{% static 'kintai/large.css' %}">
+    {# モバイル用CSS #}
+    <link rel="stylesheet" media="(max-width: 640px)" href="{% static 'kintai/small.css' %}">
+{% endblock %}
+
+{% block body %}
+
+    <div class="title">{{ title }}</div>
+
+    <form action="{% url 'kintai:confirm' %}" method="post">
+        <div class="content">
+            <div class="time-selecter">
+                <select class="time" name="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <p id="hour">時</p>
+                <select class="time" name="">
+                    <option value="4">1</option>
+                    <option value="5">2</option>
+                    <option value="6">3</option>
+                </select>
+                <p>分</p>
+            </div>
+
+
+            <div class="buttons">
+                <input type="submit" class="button" name="button" value="登録">
+                <br><br>
+                <button type="button" class="button" onclick="location.href='{% url "kintai:index" %}'">キャンセル</button>
+            </div>
+        </div>
+
+    </form>
+    {# css #}
+    {# 勤怠で背景色をちょっと変える #}
+    {% if status == "shukkin" %}
+        <style media="(max-width: 640px)">
+            body {
+                background: #2980B9; /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            }
+        </style>
+    {% elif status == "taikin" %}
+        <style media="(max-width: 640px)">
+        body {
+            background: linear-gradient(-135deg, #E4A972, #9941D8);
+        }
+    {% endif %}
+
+{% endblock %}
